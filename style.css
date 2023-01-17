@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: 'Open-Sans';
+    overflow-x: hidden;
+
+
+}
+
+#welcome-sec {
+    background-image: url(./war-images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 200px;
+
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+header nav a:hover {
+    text-shadow: 2px 2px 20px white;
+    color: black;
+    transition: all 0.5s;
+}
+
+header img {
+    width: 150px;
+}
+
+section {
+    width: 105vw;
+    height: 110vh;
+    position: relative;
+   
+    
+}
+.home{
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    position: absolute;
+   top: 20px;
+   margin-left: 79%;
+    
+}
+.home.op{
+   margin-left: 80%;
+}
+.home.bat{
+    margin-left: 83%;
+}
+.home a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    font-family: 'Open-sans';
+    font-weight: bold;
+}
+.home a:hover{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+.welcome-text {
+    width: 90vw;
+    margin: 300px auto;
+
+
+}
+
+.welcome-text h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.welcome-text p {
+    text-align: center;
+    max-width: 700px;
+    font-size: 24px;
+    margin: 100px auto;
+}
+
+/* HANKIKINDA KISMI*/
+#about {
+    background-color: black;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-text {
+    max-width: 600px;
+
+}
+
+.about-text h1 {
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.about-text p {
+    margin-top: 50px;
+    font-family: 'poppins';
+}
+
+.about-text p span {
+    border-bottom: 1px solid red;
+}
+
+#about img {
+    max-width: 600px;
+    max-height: 500px;
+}
+
+
+/* BATTLE ALANI */
+
+#battle {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.001) 0%, black 60%), url(./war-images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+   
+
+}
+
+.heading {
+    padding-top: 80px;
+}
+
+.heading h5 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading h1 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.boxes {
+    width: 620px;
+    height: 500px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    border: 1px solid white;
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Open-Sans';
+}
+
+.box h1 {
+    color: crimson;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.box:last-child {
+    width: 600px;
+}
+
+.back .material-symbols-outlined {
+  
+    color: white;
+    font-size: 50px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 50px;
+    
+}
+
+.back .material-symbols-outlined:hover {
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+/* FİKİRLER ALANI*/
+#opinions {
+    background-image: url(./war-images/sec-3.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+
+}
+
+.opinios-text {
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'poppins';
+    padding: 20px;
+}
+
+.opinios-text h1 {
+    font-size: 80px;
+}
+
+.opinios-text p {
+    font-size: 19px;
+}
+
+.opinios-text button {
+    padding: 20px;
+    background-color: red;
+    font-weight: 600;
+    transition: color 0.4s, background-color 0.4s;
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 300px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.opinios-text button:hover {
+    background-color: black;
+    color: red;
+    transition: all 0.5s;
+
+}
+
+.cards {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+    justify-content: center;
+    margin-right: 50px;
+
+
+}
+
+
+.card {
+    background-color: rgb(47, 47, 47);
+    width: 450px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    padding: 10px;
+
+
+}
+
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+
+.user {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info h1 {
+    color: crimson;
+}
+
+.gray {
+    color: gray;
+}
+
+@media (max-width:1100px) {
+    #about {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+    }
+
+
+    .about img {
+        width: 350px;
+    }
+
+    #opinions {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+       background-size: 120%;
+
+
+    }
+
+    .cards {
+        gap: 10px;
+    }
+    .opinios-text button {
+        padding: 10px;
+        background-color: red;
+        font-weight: 600;
+        transition: color 0.4s, background-color 0.4s;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 200px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
